@@ -1,11 +1,13 @@
 #!/usr/bin/python
 
+
 from string import maketrans
+
 
 def rot13(instring):
     i = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     o = 'nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM'
-    trantab = maketrans(i,o)
+    trantab = maketrans(i, o)
     return instring.translate(trantab)
 
 if __name__ == '__main__':
